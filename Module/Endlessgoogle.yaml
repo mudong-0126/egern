@@ -1,7 +1,7 @@
 #!name=Google无缝翻页
 #!desc=谷歌网页搜索自动无缝翻页
-#!openUrl=
-#!author=
+#!openUrl=https://github.com/Coldvvater/Egern/tree/master/Module
+#!author=@Coldvvater https://github.com/Coldvvater
 scriptings:
   - http_response:
       name: Endlessgoogle
