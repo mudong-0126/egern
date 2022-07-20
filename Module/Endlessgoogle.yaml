@@ -1,0 +1,15 @@
+#!name=Google无缝翻页
+#!desc=谷歌网页搜索自动无缝翻页
+#!openUrl=
+#!author=
+scriptings:
+  - http_response:
+      name: Endlessgoogle
+      match: "^https?:\/\/www\.google\..*\/search"
+      script_url: "https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/endlessgoogle.js"
+      max_size: 1048576
+      body_required: true
+http_captures:
+  - www.google.*
+mitm:
+  - www.google.*
