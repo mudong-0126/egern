@@ -1,0 +1,16 @@
+#!name=Spotify(iOS15)
+#!desc=部分解锁premium,建议重新登录,音质不能设置为超高
+#! 1. 搜索界面 歌单/歌曲可以随意切换完全播放  2. 音乐库已点赞歌曲随意切换完全播放
+#!openUrl=https://github.com/Coldvvater/Egern/tree/master/Module
+#!author=@Coldvvater https://github.com/Coldvvater
+scriptings:
+  - http_response:
+      name: Spotify
+      match: "^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$"
+      script_url: "https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js"
+      max_size: 1048576
+      body_required: true
+http_captures:
+  - spclient.wg.spotify.com
+mitm:
+  - spclient.wg.spotify.com
