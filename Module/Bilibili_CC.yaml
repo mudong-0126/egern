@@ -1,0 +1,15 @@
+#!name=BiliBili_CC字幕
+#!desc=哔哩哔哩CC字幕繁体转简体
+#!openUrl=https://github.com/Coldvvater/Egern/tree/master/Module
+#!author=@Coldvvater https://github.com/Coldvvater
+scriptings:
+  - http_response:
+      name: BiliBili_CC
+      match: "^https?:\/\/i.\.hdslb\.com\/bfs\/subtitle\/.+\.json$"
+      script_url: "https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/bilibili_cc.js"
+      max_size: 1048576
+      body_required: true
+http_captures:
+  - *.hdslb.com
+mitm:
+  - *.hdslb.com
