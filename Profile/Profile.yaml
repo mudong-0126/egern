@@ -22,6 +22,7 @@ policy_groups:
   - select:
       name: StreamingSE
       policies:
+        - DIRECT
         - HK
         - TW
   - external:
