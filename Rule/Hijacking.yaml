@@ -1,4 +1,4 @@
-# Internet Service Providers Hijacking
+# Hijacking (运营劫持)
 domain_set:
   - geo2.adobe.com
 domain_suffix_set:
