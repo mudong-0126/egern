@@ -1,4 +1,4 @@
-# Unbreak
+# Unbreak (规则修正)
 domain_set:
 # > General
   - app.adjust.com
