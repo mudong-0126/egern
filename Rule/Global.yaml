@@ -1,4 +1,4 @@
-# Global
+# Global (国外分流)
 domain_set:
   - lab.skk.moe
   - ocsp.int-x3.letsencrypt.org
