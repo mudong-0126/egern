@@ -1,9 +1,7 @@
 # Egern全局配置 by Ison
 # 作者GitHub：https://github.com/Coldvvater
 # 配置库GitHub：https://github.com/Coldvvater/Egern
-# 导入配置后,添加机场订阅链接,之后更新订阅规则。
-# ⚠️ 请先查看新手教程 如何导入订阅 https://t.me/egern_news/5  ⚠️
-# 点击配置-证书管理-生成新的CA证书，之后进入「设置」>「通用」>「描述文件」, 安装Egern的证书, 并在「设置」>「通用」>「关于本机」>「证书信任设置」开启对Egern证书的信任。
+# 配置使用方法参阅：https://raw.githubusercontent.com/Coldvvater/Egern/master/Profile/README.md
 ---
 policy_groups:
   - select:
