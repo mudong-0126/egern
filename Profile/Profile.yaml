@@ -28,27 +28,27 @@ policy_groups:
       name: HK
       type: select
       url: "https://ison.com"
-      filter: 香港|HK|Hong Kong
+      filter: 港|🇭🇰|HK|Hong
   - external:
       name: TW
       type: select
       url: "https://ison.com"
-      filter: Taiwan|台湾|台灣
+      filter: 台|🇨🇳|🇹🇼|TW|Taiwan
   - external:
       name: SG
       type: select
       url: "https://ison.com"
-      filter: 新加坡|SG|Singapore|狮城
+      filter: 坡|🇸🇬|SG|Singapore
   - external:
       name: JP
       type: select
       url: "https://ison.com"
-      filter: 日本|JP|Japan|德川幕府
+      filter: 日|🇯🇵|JP|Japan
   - external:
       name: US
       type: select
       url: "https://ison.com"
-      filter: 美利坚|US|美国|United States|美國|北墨西哥
+      filter: 美|🇺🇸|US|States|American
 rules:
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/Unbreak.yaml"
