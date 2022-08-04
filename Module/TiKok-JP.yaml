@@ -12,6 +12,7 @@ url_rewrites:
     location: $118.0$3
     status_code: 302
 mitm:
-  - '*.tiktokv.com'
-  - '*.byteoversea.com'
-  - '*.tik-tokapi.com'
+  hostnames:
+    - '*.tiktokv.com'
+    - '*.byteoversea.com'
+    - '*.tik-tokapi.com'
