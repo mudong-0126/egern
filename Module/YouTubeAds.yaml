@@ -1,0 +1,31 @@
+#!name=Block YouTube Advertising
+#!desc=仅用于视频广告
+
+url_rewrites:
+  - match: >-
+      (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+)
+    location: $1$2$3
+    status_code: 307
+  - match: >-
+      ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad
+    location: http://reject
+    status_code: 307
+  - match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break
+    location: http://reject
+    status_code: 307
+  - match: ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads
+    location: http://reject
+    status_code: 307
+  - match: ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking)
+    location: http://reject
+    status_code: 307
+  - match: ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext
+    location: http://reject
+    status_code: 307
+mitm:
+  hostnames:
+    - '-redirector*.googlevideo.com'
+    - '*.googlevideo.com'
+    - www.youtube.com
+    - s.youtube.com
+    - youtubei.googleapis.com
