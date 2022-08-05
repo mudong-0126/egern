@@ -2,7 +2,7 @@
 # 作者GitHub：https://github.com/Coldvvater
 # 配置库GitHub：https://github.com/Coldvvater/Egern
 # 配置使用方法参阅：https://raw.githubusercontent.com/Coldvvater/Egern/master/Profile/README.md
-# 更新时间：2022.08.03
+# 更新时间：2022.08.05
 ---
 policy_groups:
   - select:
@@ -13,11 +13,17 @@ policy_groups:
   - select:
       name: Proxy
       policies:
+        - Auto
         - HK
         - TW
         - SG
         - JP
         - US
+        - DIRECT
+  - external:
+      name: Auto
+      type: auto_test
+      url: "https://ison.com"
   - select:
       name: StreamingSE
       policies:
