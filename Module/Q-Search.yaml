@@ -148,6 +148,9 @@ url_rewrites:
   - match: ^https:\/\/duckduckgo.com\/\?q=ddg(\+|%20)([^&]+).+
     location: https://duckduckgo.com/?ia=about&q=$2
     status_code: 302
+  - match: ^https:\/\/duckduckgo.com\/\?q=ios\+([^&]+).+
+    location: https://www.qimai.cn/search/index/search/$1
+    status_code: 302
   - match: ^https:\/\/duckduckgo.com\/\?q=ccn&.+
     location: >-
       https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc=
