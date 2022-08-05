@@ -1,0 +1,12 @@
+#!name=NoMoCam
+#!desc=NoMoCam解锁Pro滤镜
+
+scriptings:
+  - http_request:
+      name: NoMoCam
+      script_url: >-
+        https://raw.githubusercontent.com/yqc007/QuantumultX/master/NoMoCamProCrack.js
+      match: ^https?:\/\/nomo\.dafork\.com\/api\/.+
+mitm:
+  hostnames:
+    - nomo.dafork.com
