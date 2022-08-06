@@ -12,10 +12,3 @@ scriptings:
       match: ^https?:\/\/sub\.store
       body_required: true
       timeout: 120
-  - http_request:
-      name: Sub-Store Sync
-      script_url: >-
-        https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
-      cron: 0 0 * * *
-      body_required: true
-      timeout: 120
