@@ -57,31 +57,31 @@ policy_groups:
       filter: 美|🇺🇸|US|States|American
 rules:
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/Unbreak.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Unbreak.yaml"
       policy: DIRECT
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/Advertising.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Advertising.yaml"
       policy: REJECT
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/Privacy.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Privacy.yaml"
       policy: REJECT
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/Hijacking.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Hijacking.yaml"
       policy: REJECT
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/Streaming.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Streaming.yaml"
       policy: Proxy
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/StreamingSE.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/StreamingSE.yaml"
       policy: StreamingSE
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/Global.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Global.yaml"
       policy: Proxy
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/Apple.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Apple.yaml"
       policy: DIRECT
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/China.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/China.yaml"
       policy: DIRECT
   - ip_cidr:
       match: 192.168.0.0/16
