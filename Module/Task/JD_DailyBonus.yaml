@@ -4,6 +4,17 @@
 scriptings:
   - schedule:
       name: 京东多合一签到
-      cron: 40 17 * * *
+      cron: 5 0 * * *
       script_url: "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js"
       body_required: true
+      timeout: 60
+  - http_request:
+      name: 获取京东Cookie
+      match: "^https:\\/\\/(api\\.m|me-api|ms\\.jr)\\.jd\\.com\\/(client\\.action\\?functionId=signBean|user_new\\/info\\/GetJDUserInfoUnion\\?|gw\\/generic\\/hy\\/h5\\/m\\/appSign\\?)"
+      script_url: "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js"
+      body_required: true
+mitm:
+  hostnames:
+    - ms.jr.jd.com
+    - me-api.jd.com
+    - api.m.jd.com
