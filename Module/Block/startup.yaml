@@ -1,0 +1,63 @@
+#!name=开屏去广告
+#!desc=通过脚本去除部分APP的顽固开屏广告
+
+scriptings:
+  - http_response:
+      name: 嘀嗒出行_开屏去广告
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+      match: ^https?:\/\/capis(-?\w*)?\.didapinche\.com\/ad\/cx\/startup\?
+      body_required: true
+  - http_response:
+      name: Fa米家_开屏去广告
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/famijia/famijia_checkin.js
+      match: ^https?:\/\/fmapp\.chinafamilymart\.com\.cn\/api\/app\/market\/start\/ad
+      body_required: true
+  - http_response:
+      name: BiliBili_开屏去广告
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/bilibili/bilibili_plus.js
+      match: ^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list
+      body_required: true
+  - http_response:
+      name: 美团外卖_开屏去广告
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+      match: ^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo?
+      body_required: true
+  - http_response:
+      name: 小爱音箱_开屏去广告
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+      match: ^https?:\/\/hd\.mina\.mi\.com\/splashscreen\/alert
+      body_required: true
+  - http_response:
+      name: 京东_开屏去广告
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+      match: ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start
+      body_required: true
+  - http_response:
+      name: 联享家_开屏去广告
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+      match: ^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview.fcg
+      body_required: true
+  - http_response:
+      name: 多点_开屏去广告
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.js
+      match: ^https?:\/\/cmsapi\.dmall\.com\/app\/home\/homepageStartUpPic
+      body_required: true
+mitm:
+  hostnames:
+    - capis.didapinche.com
+    - capis*.didapinche.com
+    - fmapp.chinafamilymart.com.cn
+    - app.bilibili.com
+    - wmapi.meituan.com
+    - hd.mina.mi.com
+    - api.m.jd.com
+    - mi.gdt.qq.com
+    - cmsapi.dmall.com
