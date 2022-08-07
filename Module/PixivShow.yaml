@@ -6,7 +6,7 @@
 #!manual=https://t.me/Functional_Store_Hub/10
 
 scriptings:
-  - http_request:
+  - schedule:
       name: Pixiv Show
       script_url: >-
         https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/PixivShow/Script/PixivShow.js
