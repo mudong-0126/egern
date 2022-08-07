@@ -1,0 +1,28 @@
+#!name=万达电影
+#!desc=万达电影每日自动签到
+# user-api-prd-mx.wandafilm.com 获取不到Cookie，临时改为*api-prd-mx.wandafilm.com，cms-activity-api-prd-mx.wandafilm.com随之移除
+scriptings:
+  - http_request:
+      name: 万达电影_每日签到
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/wanda/wanda_checkin.js
+      cron: 35 0 * * *
+      body_required: true
+      timeout: 10
+  - http_request:
+      name: 万达电影_获取Cookie
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/wanda/wanda_checkin.js
+      match: >-
+        ^https?:\/\/user\-api\-prd\-mx\.wandafilm\.com\/user\/query_user_level_tip\.api
+      body_required: true
+  - http_request:
+      name: 万达电影_获取ActivityCode
+      script_url: >-
+        https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/wanda/wanda_checkin.js
+      match: >-
+        ^https?:\/\/cms\-activity\-api\-prd\-mx\.wandafilm\.com\/activity\/activity_count\.api\?activityCode=(\d*)
+      body_required: true
+mitm:
+  hostnames:
+    - '*api-prd-mx.wandafilm.com'
