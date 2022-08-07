@@ -10,5 +10,5 @@ scriptings:
       name: Pixiv Show
       script_url: >-
         https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/PixivShow/Script/PixivShow.js
-      cron: 0 0/30 8-22 * * ?
+      cron: 08 15 * * *
       body_required: true
