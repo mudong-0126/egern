@@ -2,7 +2,7 @@
 # 作者GitHub：https://github.com/Coldvvater
 # 配置库GitHub：https://github.com/Coldvvater/Egern
 # 配置使用方法参阅：https://raw.githubusercontent.com/Coldvvater/Egern/master/Profile/README.md
-# 更新时间：2022.08.05
+# 更新时间：2022.08.08
 ---
 policy_groups:
   - select:
@@ -25,11 +25,13 @@ policy_groups:
       type: auto_test
       url: "https://ison.com"
   - select:
-      name: StreamingSE
+      name: Streaming
       policies:
-        - DIRECT
         - HK
         - TW
+        - SG
+        - JP
+        - US
   - external:
       name: HK
       type: select
@@ -70,10 +72,7 @@ rules:
       policy: REJECT
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Streaming.yaml"
-      policy: Proxy
-  - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/StreamingSE.yaml"
-      policy: StreamingSE
+      policy: Streaming
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Global.yaml"
       policy: Proxy
