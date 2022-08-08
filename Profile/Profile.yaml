@@ -18,7 +18,9 @@ policy_groups:
         - TW
         - SG
         - JP
+        - KR
         - US
+        - UK
         - DIRECT
   - external:
       name: Auto
@@ -31,7 +33,9 @@ policy_groups:
         - TW
         - SG
         - JP
+        - KR
         - US
+        - UK
   - external:
       name: HK
       type: select
@@ -53,10 +57,20 @@ policy_groups:
       url: "https://ison.com"
       filter: 日|🇯🇵|JP|Japan
   - external:
+      name: KR
+      type: select
+      url: "https://ison.com"
+      filter: 韩|韓|🇰🇷|韩国|KR|KOR|Korea
+  - external:
       name: US
       type: select
       url: "https://ison.com"
       filter: 美|🇺🇸|US|States|American
+  - external:
+      name: UK
+      type: select
+      url: "https://ison.com"
+      filter: 英国|🇬🇧|UK|London|United Kingdom
 rules:
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Unbreak.yaml"
