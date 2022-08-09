@@ -1,4 +1,4 @@
-#!name=京东多合一签到
+#!name=京东签到
 #!desc=每日定时签到领京豆、红包、钢镚等
 
 scriptings:
@@ -8,13 +8,4 @@ scriptings:
       script_url: "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js"
       body_required: true
       timeout: 60
-  - http_request:
-      name: 获取京东Cookie
-      match: "^https:\\/\\/(api\\.m|me-api|ms\\.jr)\\.jd\\.com\\/(client\\.action\\?functionId=signBean|user_new\\/info\\/GetJDUserInfoUnion\\?|gw\\/generic\\/hy\\/h5\\/m\\/appSign\\?)"
-      script_url: "https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js"
-      body_required: true
-mitm:
-  hostnames:
-    - ms.jr.jd.com
-    - me-api.jd.com
-    - api.m.jd.com
+
