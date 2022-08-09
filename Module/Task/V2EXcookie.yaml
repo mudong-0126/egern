@@ -1,6 +1,6 @@
 #!name=V2EXcookie
 #!desc=获取V2EXcookie进行签到任务
-
+# 获取成功后可禁用此模块
 scriptings:
   - http_request:
       name: V2EXcookie
