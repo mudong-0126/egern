@@ -4,6 +4,6 @@
 scriptings:
   - schedule:
       name: V2EX
-      cron: 2 0 * * *
+      cron: 6 0 * * *
       script_url: "https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js"
       body_required: false
