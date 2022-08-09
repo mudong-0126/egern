@@ -1,0 +1,12 @@
+#!name=V2EX签到
+#!desc=每日定时签到领货币
+
+scriptings:
+  - http_request:
+      name: V2EXcookie
+      match: "^https:\\/\\/www\\.v2ex\\.com\\/mission\\/daily"
+      script_url: "https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.cookie.js"
+      body_required: false
+mitm:
+  hostnames:
+    - "*.v2ex.com"
