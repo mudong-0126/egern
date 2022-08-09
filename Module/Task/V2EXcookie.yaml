@@ -1,5 +1,5 @@
-#!name=V2EX签到
-#!desc=每日定时签到领货币
+#!name=V2EXcookie
+#!desc=获取V2EXcookie进行签到任务
 
 scriptings:
   - http_request:
