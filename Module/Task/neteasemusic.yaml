@@ -1,5 +1,5 @@
-#!name=网易云音乐
-#!desc=网易云音乐签到
+#!name=网易云音乐签到
+#!desc=每天00:10进行签到
 
 scriptings:
   - schedule:
