@@ -1,5 +1,5 @@
 #!name=V2EXcookie
-#!desc=获取V2EXcookie进行签到任务
+#!desc=获取V2EX cookie以进行签到，配合'V2EX签到'模块使用。
 # 获取成功后可禁用此模块
 scriptings:
   - http_request:
