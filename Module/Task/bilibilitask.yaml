@@ -1,5 +1,6 @@
 #!name=bilibili签到
 #!desc=定时签到直播红包、银瓜子转硬币
+# 每天00:01、00:02、00:03进行签到。
 
 scriptings:
   - schedule:
