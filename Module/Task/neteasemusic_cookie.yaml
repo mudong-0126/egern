@@ -1,5 +1,6 @@
 #!name=网易云音乐cookie
-#!desc=获取网易云音乐cookie
+#!desc=获取网易云音乐cookie以进行签到，配合'网易云音乐签到'模块使用。
+# 获取cookie后可禁用此模块。
 
 scriptings:
   - http_request:
