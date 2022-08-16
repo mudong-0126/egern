@@ -1,0 +1,17 @@
+#!name=Block Aweme Advertising
+#!desc=By Choler | 抖音版本 <= 16.2.0
+
+url_rewrites:
+  - match: ^https?:\/\/api.*\.amemv\.com\/aweme\/v2\/feed\/
+    location: https://aweme.snssdk.com/aweme/v1/feed/
+    status_code: 307
+scriptings:
+  - http_response:
+      name: douyin
+      script_url: https://raw.githubusercontent.com/Choler/Surge/master/Script/douyin.js
+      match: ^https?:\/\/aweme\.snssdk\.com\/aweme\/v\d\/feed\/
+      body_required: true
+mitm:
+  hostnames:
+    - '*.amemv.com'
+    - '*.snssdk.com'
