@@ -2,7 +2,7 @@
 # 作者GitHub：https://github.com/Coldvvater
 # 配置库GitHub：https://github.com/Coldvvater/Egern
 # 配置使用方法参阅：https://raw.githubusercontent.com/Coldvvater/Egern/master/Profile/README.md
-# 更新时间：2022.08.08
+# 更新时间：2022.08.19
 ---
 policy_groups:
   - select:
@@ -18,24 +18,36 @@ policy_groups:
         - TW
         - SG
         - JP
-        - KR
         - US
-        - UK
         - DIRECT
   - external:
       name: Auto
       type: auto_test
       url: "https://ison.com"
   - select:
-      name: Streaming
+      name: Apple
       policies:
+        - DIRECT
         - HK
         - TW
         - SG
         - JP
-        - KR
         - US
-        - UK
+  - select:
+      name: Streaming
+      policies:
+        - Proxy
+        - HK
+        - TW
+        - SG
+        - JP
+        - US
+  - select:
+      name: StreamingSE
+      policies:
+        - DIRECT
+        - HK
+        - TW
   - external:
       name: HK
       type: select
@@ -57,20 +69,10 @@ policy_groups:
       url: "https://ison.com"
       filter: 日|🇯🇵|JP|Japan
   - external:
-      name: KR
-      type: select
-      url: "https://ison.com"
-      filter: 韩|韓|🇰🇷|韩国|KR|KOR|Korea
-  - external:
       name: US
       type: select
       url: "https://ison.com"
       filter: 美|🇺🇸|US|States|American
-  - external:
-      name: UK
-      type: select
-      url: "https://ison.com"
-      filter: 英国|🇬🇧|UK|London|United Kingdom
 rules:
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Unbreak.yaml"
@@ -87,6 +89,9 @@ rules:
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Streaming.yaml"
       policy: Streaming
+  - rule_set:
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/StreamingSE.yaml"
+      policy: StreamingSE
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Global.yaml"
       policy: Proxy
