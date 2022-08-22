@@ -23,7 +23,7 @@ policy_groups:
   - external:
       name: Auto
       type: auto_test
-      url: "https://ison.com"
+      url: "https://xxxx.com"
   - select:
       name: Apple
       policies:
