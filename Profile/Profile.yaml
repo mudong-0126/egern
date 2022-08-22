@@ -1,4 +1,4 @@
-# Egern全局配置 by Ison
+# Egern全局配置 by Coldvvater
 # 作者GitHub：https://github.com/Coldvvater
 # 配置库GitHub：https://github.com/Coldvvater/Egern
 # 配置使用方法参阅：https://raw.githubusercontent.com/Coldvvater/Egern/master/Profile/README.md
@@ -34,6 +34,12 @@ policy_groups:
         - JP
         - US
   - select:
+      name: StreamingSE
+      policies:
+        - DIRECT
+        - HK
+        - TW
+  - select:
       name: Streaming
       policies:
         - Proxy
@@ -42,36 +48,30 @@ policy_groups:
         - SG
         - JP
         - US
-  - select:
-      name: StreamingSE
-      policies:
-        - DIRECT
-        - HK
-        - TW
   - external:
       name: HK
       type: select
-      url: "https://ison.com"
+      url: "https://xxxx.com"
       filter: 港|🇭🇰|HK|Hong
   - external:
       name: TW
       type: select
-      url: "https://ison.com"
+      url: "https://xxxx.com"
       filter: 台|🇨🇳|🇹🇼|TW|Taiwan
   - external:
       name: SG
       type: select
-      url: "https://ison.com"
+      url: "https://xxxx.com"
       filter: 坡|🇸🇬|SG|Singapore
   - external:
       name: JP
       type: select
-      url: "https://ison.com"
+      url: "https://xxxx.com"
       filter: 日|🇯🇵|JP|Japan
   - external:
       name: US
       type: select
-      url: "https://ison.com"
+      url: "https://xxxx.com"
       filter: 美|🇺🇸|US|States|American
 rules:
   - rule_set:
