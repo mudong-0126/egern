@@ -7,3 +7,5 @@
 > 1. 目前Egern暂时只支持SS和Trojan协议，(马上支持Vmess) 请选择Surge或Shadowrocket类型订阅链接。
 > 2. 在Egern中点击工具-策略组,点进HK US等节点策略组里，将复制好的订阅链接替换掉 https://xxxx.com 即可。
 
+
+*PS：`Profile-Evolve.yaml`为本人新设的自用配置，其配置只是稍微细化了规则集和策略组，其他方面基本和`Profile.yaml`相同。另外，若想使用`Profile-Evolve.yaml`需下载到本地后重命名为`Profile.yaml`再导入Egern。*
