@@ -9,19 +9,26 @@ scriptings:
   - http_response:
       name: DualSubs.YouTube.Player
       script_url: >-
-        https://raw.githubusercontent.com/DualSubs/DualSubs/main/js/DualSubs.YouTube.Player.js
+        https://raw.githubusercontent.com/DualSubs/DualSubs/beta/js/DualSubs.YouTube.Player.beta.js
       match: ^https?:\/\/(www|m)\.youtube\.com\/youtubei\/v1\/player(\?.*)$
+      body_required: true
+      timeout: 30
+  - http_response:
+      name: DualSubs.YouTube.Player
+      script_url: >-
+        https://raw.githubusercontent.com/DualSubs/DualSubs/beta/js/DualSubs.YouTube.Player.beta.js
+      match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player(\?.*)$
       body_required: true
       timeout: 30
   - http_request:
       name: DualSubs.YouTube.TimedText
       script_url: >-
-        https://raw.githubusercontent.com/DualSubs/DualSubs/main/js/DualSubs.YouTube.TimedText.request.js
+        https://raw.githubusercontent.com/DualSubs/DualSubs/beta/js/DualSubs.YouTube.TimedText.request.beta.js
       match: ^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$
   - http_response:
       name: DualSubs.YouTube.TimedText
       script_url: >-
-        https://raw.githubusercontent.com/DualSubs/DualSubs/main/js/DualSubs.YouTube.TimedText.response.js
+        https://raw.githubusercontent.com/DualSubs/DualSubs/beta/js/DualSubs.YouTube.TimedText.response.beta.js
       match: ^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext(\?.*)$
       body_required: true
 mitm:
@@ -29,3 +36,4 @@ mitm:
     - www.youtube.com
     - m.youtube.com
     - youtubei.googleapis.com
+
