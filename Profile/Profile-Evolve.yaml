@@ -2,7 +2,7 @@
 # 作者GitHub：https://github.com/Coldvvater
 # 配置库GitHub：https://github.com/Coldvvater/Egern
 # 配置使用方法参阅：https://raw.githubusercontent.com/Coldvvater/Egern/master/Profile/README.md
-# 更新时间：2022.08.28
+# 更新时间：2022.09.24
 ---
 policy_groups:
   - select:
@@ -13,16 +13,22 @@ policy_groups:
       name: Proxy
       policies:
         - Auto
+        - Fallback
         - "Others "
   - external:
       name: Auto
       type: auto_test
+      url: "https://xxxx.com"
+  - external:
+      name: Fallback
+      type: fallback
       url: "https://xxxx.com"
   - select:
       name: Foreign
       policies:
         - Proxy
         - Auto
+        - Fallback
         - HongKong
         - TaiWan
         - Singapore
@@ -36,6 +42,7 @@ policy_groups:
         - DIRECT
         - Proxy
         - Auto
+        - Fallback
         - HongKong
         - TaiWan
         - Singapore
@@ -48,6 +55,7 @@ policy_groups:
         - DIRECT
         - Proxy
         - Auto
+        - Fallback
         - HongKong
         - TaiWan
         - Singapore
@@ -59,6 +67,7 @@ policy_groups:
       policies:
         - Proxy
         - Auto
+        - Fallback
         - HongKong
         - TaiWan
         - Singapore
@@ -71,6 +80,7 @@ policy_groups:
       policies:
         - Proxy
         - Auto
+        - Fallback
         - HongKong
         - TaiWan
         - Singapore
@@ -83,6 +93,7 @@ policy_groups:
       policies:
         - Proxy
         - Auto
+        - Fallback
         - HongKong
         - TaiWan
         - Singapore
@@ -95,6 +106,7 @@ policy_groups:
       policies:
         - Proxy
         - Auto
+        - Fallback
         - HongKong
         - TaiWan
         - Singapore
@@ -108,6 +120,7 @@ policy_groups:
         - DIRECT
         - Proxy
         - Auto
+        - Fallback
         - HongKong
         - TaiWan
         - Singapore
@@ -120,6 +133,7 @@ policy_groups:
         - DIRECT
         - Proxy
         - Auto
+        - Fallback
         - HongKong
         - TaiWan
         - Singapore
@@ -183,22 +197,22 @@ rules:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/TikTok.yaml"
       policy: TikTok
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/DivineEngine/Streaming.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/ACL4SSR/ProxyMedia.yaml"
       policy: Streaming
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/Telegram.yaml"
       policy: Telegram
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/Twitter_Resolve.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/Twitter.yaml"
       policy: Foreign
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/Google_Resolve.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/Google.yaml"
       policy: Foreign
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/GitHub.yaml"
       policy: Foreign
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/Global.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/ACL4SSR/ProxyLite.yaml"
       policy: Foreign
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/Apple.yaml"
@@ -207,7 +221,7 @@ rules:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/Microsoft.yaml"
       policy: Microsoft
   - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/China.yaml"
+      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/ACL4SSR/ChinaDomain.yaml"
       policy: Domestic
   - ip_cidr:
       match: 192.168.0.0/16
