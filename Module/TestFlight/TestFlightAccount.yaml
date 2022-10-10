@@ -11,3 +11,4 @@ scriptings:
 mitm:
   hostnames:
     - testflight.apple.com
+
