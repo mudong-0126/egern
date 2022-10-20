@@ -1,0 +1,22 @@
+#!name=YouTube去广告
+#!desc=去除视频广告、贴片广告
+#!by Maasea
+#!仓库地址：https://github.com/Maasea/sgmodule
+
+scriptings:
+  - http_response:
+      name: youtube-player
+      script_url: >-
+        https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube-player.js
+      match: ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player
+      body_required: true
+  - http_response:
+      name: youtube-fake
+      script_url: >-
+        https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube-fake.js
+      match: ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad
+mitm:
+  hostnames:
+    - '-redirector*.googlevideo.com'
+    - '*.googlevideo.com'
+    - youtubei.googleapis.com
