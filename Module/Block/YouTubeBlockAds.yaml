@@ -6,7 +6,8 @@
 scriptings:
   - http_response:
       name: youtube-proto
-      script_url: https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
+      script_url: >-
+        https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
       match: ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next)\?
       body_required: true
   - http_response:
