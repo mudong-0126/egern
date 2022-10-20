@@ -8,19 +8,19 @@ url_rewrites:
     status_code: 307
   - match: >-
       ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext
-    location: http://reject
+    location: http://reject/
     status_code: 307
 mitm:
   hostnames:
