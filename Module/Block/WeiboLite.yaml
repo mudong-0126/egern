@@ -1,24 +1,21 @@
 #!name=微博轻享版去广告
 #!desc=微博轻享版（原国际版）去广告
-# 原作者@ddgksf2013（Cuttlefish）https://github.com/ddgksf2013
+#!原作者@ddgksf2013（Cuttlefish）https://github.com/ddgksf2013
 
 url_rewrites:
   - match: ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php
-    location: http://reject
-    status_code: 307
-  - match: ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/page\/get_search_suggest
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^ttps?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
 scriptings:
   - http_response:
@@ -45,3 +42,4 @@ mitm:
   hostnames:
     - '*api.weibo*'
     - sdkapp.uve.weibo.com
+
