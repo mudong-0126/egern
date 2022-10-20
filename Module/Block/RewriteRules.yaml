@@ -1,2294 +1,2295 @@
 #!name=野比复写去广告规则
 #!desc=此模块集成了lhie1和ConnersHua,还有一些野比自写的复写规则
+#!Update time: 2021.8.26
 
 url_rewrites:
   - match: ^https?:\/\/interface\.music\.163\.com\/eapi\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/iadmusicmat\.music.126.net\/.*?jpg$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/p\.c\.music\.126.net\/.*?jpg$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/shimo\.im\/api\/ads\?(.+?)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/c\.minisplat\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/c1\.minisplat\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cache\.changjingyi\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cache\.gclick\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.coolaiy\.com\/b\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.babyye\.com\/b\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.gwv7\.com\/b\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.likeji\.net\/b\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/211\.98\.70\.226:8080\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/211\.98\.71\.195:8080\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/211\.98\.71\.196:8080\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/hls.cache.p4p\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/music\/common\/upload\/t_splash_info
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/omts.tc.qq.com\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/tips\/fcgi-bin\/fcg_get_advert
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/variety.tc.qq.com\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/bla\.gtimg\.com\/qqlive\/\d{6}.+?\.png
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/imgcache\.qq\.com\/qqlive\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/lives\.l\.qq\.com\/livemsg\?sdtfrom=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qiantu\/upload\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mtteve\.beacon\.qq\.com\/analytics
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r\.inews\.qq\.com\/adsBlacklist
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r\.inews\.qq\.com\/getBannerAds
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r\.inews\.qq\.com\/getFullScreenPic
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r\.inews\.qq\.com\/getNewsRemoteConfig
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/r\.inews\.qq\.com\/getSplash\?apptype=ios&startarticleid=&__qnr=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r\.inews\.qq\.com\/searchHotCatList
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r\.inews\.qq\.com\/upLoadLoc
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/splashqqlive\.gtimg\.com\/website\/\d{6}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/y\.gtimg\.cn\/music\/common\/upload\/targeted_ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.weibo\.cn\/2\/statuses\/extend\?gsid=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/edit\.sinaapp\.com\/ua\?t=adv
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/free\.sinaimg\.cn\/u1\.img\.mobile\.sina\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/simg\.s\.weibo\.com\/.+?_ios\d{2}\.gif
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/storage\.wax\.weibo\.com\/\w+\.(png|jpg|mp4)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/u1\.img\.mobile\.sina\.cn\/public\/files\/image\/\d{3}x\d{2,4}.+?(png|jpg|mp4)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/(iyes|(api|hd)\.mobile)\.youku\.com\/(adv|common\/v3\/hudong\/new)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.mp4\?ccode=0902
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.mp4\?sid=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ad\.api\.3g\.youku\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.appsdk\.soku\.com\/bg\/r
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.appsdk\.soku\.com\/tag\/r
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.k\.sohu\.com\/api\/channel\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.mobile\.youku\.com\/layout\/search\/hot\/word
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.youku\.com\/video\/libs\/iwt\.js
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pic\.k\.sohu\.com\/img8\/wb\/tj\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r\.l\.youku\.com\/rec_at_click
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r1\.ykimg\.com\/\w{30,35}\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r1\.ykimg\.com\/material\/.+?\/\d{3,4}-\d{4}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r1\.ykimg\.com\/material\/.+?\/\d{6}\/\d{4}\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/vali\.cp31\.ott\.cibntv\.net\/youku
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.zhuishushenqi\.com\/advert
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.zhuishushenqi\.com\/notification\/shelfMessage
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.zhuishushenqi\.com\/recommend
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.zhuishushenqi\.com\/splashes\/ios
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.zhuishushenqi\.com\/user\/bookshelf-updated
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/itunes\.apple\.com\/lookup\?id=575826903
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/fusion_switch
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/agn\.aty\.sohu\.com\/m?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.k\.sohu\.com\/api\/news\/adsense
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/hui\.sohu\.com\/predownload2\/?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.aty\.sohu\.com\/openload?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mbl\.56\.com\/config\/v1\/common\/config\.union\.ios\.do?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mmg\.aty\.sohu\.com\/mqs?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mmg\.aty\.sohu\.com\/pvlog?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/photocdn\.sohu\.com\/tvmobilemvms
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/s\.go\.sohu\.com\/adgtr\/\?gbcode=(ps|sv|offnavi|newvector|ulog\.imap|newloc)(\.map)?\.(baidu|n\.shifen)\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/afd\.baidu\.com\/afd\/entry
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/als\.baidu\.com\/clog\/clog
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/baichuan\.baidu\.com\/rs\/adpmobile\/launch
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/bj\.bcebos\.com\/fc-feed\/0\/pic\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|newlog|mlog)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/c\.tieba\.baidu\.com\/c\/p\/img\?src=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/logtogether\?cmd=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fcvbjbcebos\.baidu\.com\/.+?\.mp4
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/gss0\.bdstatic\.com\/.+?\/static\/wiseindex\/img\/bd_red_packet\.png
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sm\.domobcdn\.com\/ugc\/\w\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/tb1\.bdstatic\.com\/tb\/cms\/ngmis\/adsense\/*\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/tb2\.bdstatic\.com\/tb\/mobile\/spb\/widget\/jump
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/update\.pan\.baidu\.com\/statistics
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/wapwenku\.baidu\.com\/view\/fengchao\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/wapwenku\.baidu\.com\/view\/fengchaoTwojump\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/wenku\.baidu\.com\/shifen\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ad\.api\.moji\.com\/ad\/log\/stat
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ast\.api\.moji\.com\/assist\/ad\/moji\/stat
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cdn\.moji\.com\/adlink\/avatarcard
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cdn\.moji\.com\/adlink\/common
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cdn\.moji\.com\/adlink\/splash\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cdn\.moji\.com\/advert\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cdn2\.moji002\.com\/webpush\/ad2\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fds\.api\.moji\.com\/card\/recommend
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/show\.api\.moji\.com\/json\/showcase\/getAll
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/stat\.moji\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/storage\.360buyimg\.com\/kepler-app
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ugc\.moji001\.com\/sns\/json\/profile\/get_unread
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.m\.mi\.com\/v1\/app\/start
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.jr\.mi\.com\/v1\/adv\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/image1\.chinatelecom-ec\.com\/images\/.+?\/\d{13}\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m1\.ad\.10010\.com\/noticeMag\/images\/imageUpload\/2\d{3}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/res\.mall\.10010\.cn\/mall\/common\/js\/fa\.js?referer=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.newad\.ifeng\.com\/ClientAdversApi1508\?adids=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/c1\.ifengimg\.com\/.+?_w1080_h1410\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/exp\.3g\.ifeng\.com\/coverAdversApi\?gv=\.
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ifengad\.3g\.ifeng\.com\/ad\/pv\.php\?stat=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/iis1\.deliver\.ifeng\.com\/getmcode\?adid=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/eapi\/[ad|event]\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.127\.net\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/eapi\/(ad|log)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/eapi\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/c\.m\.163\.com\/nc\/gl\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/g1\.163\.com\/madfeedback
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img1\.126\.net\/.+?dpi=\w{7,8}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img1\.126\.net\/channel14\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mimg\.127\.net\/external\/smartpop-manger\.min\.js
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/nex\.163\.com\/q
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+?&product=adpublish
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/p[^4](c)?\.music\.126\.net\/\w+==\/10995\d{13}\.jpg$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dsp-impr2\.youdao\.com\/adload.s\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/interface\.music\.163\.com\/eapi\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/client?functionId=lauch\/lauchConfig&appName=paidaojia
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/bdsp-x\.jd\.com\/adx\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.360buyimg\.com\/mobilecms\/s640x1136_jfs\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/(\d{1,3}\.){1,3}\d{1,3}\/view\/dale-online\/dale_ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.douban\.com\/v2\/app_ads\/common_ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\d\.doubanio\.com\/view\/dale-online\/dale_ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/capi\.douyucdn\.cn\/lapi\/sign\/app(api)?\/getinfo\?client_sys=ios
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/capi\.douyucdn\.cn\/api\/ios_app\/check_update
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/capi\.douyucdn\.cn\/api\/v1\/getStartSend?client_sys=ios
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/douyucdn\.cn\/.+?\/appapi\/getinfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/rtbapi.douyucdn.cn\/japi\/sign\/app\/getinfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/staticlive\.douyucdn\.cn\/.+?\/getStartSend
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/staticlive\.douyucdn\.cn\/upload\/signs\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/elemecdn\.com\/.+?\/sitemap
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fuss10\.elemecdn\.com\/.+?\/w\/640\/h\/\d{3,4}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fuss10\.elemecdn\.com\/.+?\/w\/750\/h\/\d{3,4}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fuss10\.elemecdn\.com\/.+?\.mp4
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.elecfans\.com\/static\/js\/ad\.js
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www1\.elecfans\.com\/www\/delivery\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/p\d\.pstatp\.com\/origin
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pb\d\.pstatp\.com\/origin
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/adse.+?\.com\/[a-z]{4}\/loading\?appid=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/adse\.ximalaya\.com\/ting\/feed\?appid=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/adse\.ximalaya\.com\/ting\/loading\?appid=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/adse\.ximalaya\.com\/ting\?appid=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group21\/M03\/E7\/3F\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group21\/M0A\/95\/3B\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group22\/M00\/92\/FF\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group22\/M05\/66\/67\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group22\/M07\/76\/54\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group23\/M01\/63\/F1\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group23\/M04\/E5\/F6\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group23\/M07\/81\/F6\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group23\/M0A\/75\/AA\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group24\/M03\/E6\/09\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group24\/M07\/C4\/3D\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fdfs\.xmcdn\.com\/group25\/M05\/92\/D1\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/book\.img\.ireader\.com\/group6\/M00
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.ycapp\.yiche\.com\/appnews\/getadlist
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.ycapp\.yiche\.com\/yicheapp\/getadlist
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.ycapp\.yiche\.com\/yicheapp\/getappads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cheyouapi\.ycapp\.yiche\.com\/appforum\/getusermessagecount
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.googlevideo\.com\/ptracking\?pltype=adhost
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.youtube\.com\/api\/stats\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.youtube\.com\/get_midroll
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.youtube\.com\/pagead\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.youtube\.com\/ptracking\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.youtube\.com\/_get_ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/premiumyva\.appspot\.com\/vmclickstoadvertisersite
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/s\.youtube\.com\/api\/stats\/watchtime?adformat
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/s0\.2mdn\.net\/ads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/stats\.tubemogul\.com\/stats\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/youtubei\.googleapis\.com/.+?ad_break
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.tsytv\.com\.cn\/api\/app\/ios\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/res\.kfc\.com\.cn\/advertisement\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/img\.yun\.01zhuanche\.com\/statics\/app\/advertisement\/.+?-750-1334
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img01\.10101111cdn\.com\/adpos\/share\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/bank\.wo\.cn\/v9\/getstartpage
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.ihytv\.com\/material\/adv\/img\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.meituan\.net\/midas\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/p\d\.meituan\.net\/(mmc|wmbanner)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/mmgr\.gtimg\.com\/gjsmall\/qqpim\/public\/ios\/splash\/.+?\/\d{4}_\d{4}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.jiemian\.com\/ads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/adproxy\.autohome\.com\.cn\/AdvertiseService\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app2\.autoimg\.cn\/appdfs\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\d{2}\.ddimg\.cn\/upload_img\/.+?\/670x900
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\d{2}\.ddimg\.cn\/upload_img\/.+?\/750x1064
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/mapi\.dangdang\.com\/index\.php\?action=init&user_client=iphone
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dl\.app\.gtja\.com\/operation\/config\/startupConfig\.json
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.laifeng\.com\/v1\/start\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.pstatp\.com\/img\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.(snssdk|amemv)\.com\/api\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/aweme\/stats\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/device\/update\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/aweme\.snssdk\.com\/aweme\/v1\/screen\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/aweme\.snssdk\.com\/service\/1\/app_logout\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/aweme\.snssdk\.com\/service\/2\/app_log
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/frontier\.snssdk\.com\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sf\w-ttcdn-tos\.pstatp\.com\/obj\/web\.business\.image
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.xiachufang\.com\/v2\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/connect\.facebook\.net\/en_US\/fbadnw\.js
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/qzonestyle\.gtimg\.cn\/qzone\/biz\/gdt\/mob\/sdk\/ios\/v2\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cdn\.kuaidi100\.com\/images\/open\/appads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/p\.kuaidi100\.com\/mobile\/mainapi\.do
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.m\.mi\.com\/.+?\/app\/start
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_ad\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/portal\.php\?a=get_ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/portal\.php\?c=duiba
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/portal\.php\?a=get_coopen_ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/weicoapi\.weico\.cc\/img\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/weico4ad\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/g\.cdn\.pengpengla\.com\/starfantuan\/boot-screen-info\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/discuz\.gtimg\.cn\/cloud\/scripts\/discuz_tips\.js
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sapi\.guopan\.cn\/get_buildin_ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/789\.kakamobi\.cn\/.+?adver
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/smart\.789\.image\.mucang\.cn\/advert
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/bbs\.airav\.cc\/data\/.+?\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/image\.airav\.cc\/AirADPic\/.+?\.gif
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.airav\.cc\/images\/Mobile_popout_cn\.gif
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cmsapi\.wifi8\.com\/v1\/emptyAd\/info
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cmsapi\.wifi8\.com\/v2\/adNew\/config
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cmsfile\.wifi8\.com\/uploads\/png\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sso\.ifanr\.com\/jiong\/IOS\/appso\/splash\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/oimage\w\d\.ydstatic\.com\/image\?.+?=adpublish
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/118\.178\.214\.118\/yyting\/advertclient\/ClientAdvertList\.action
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/dapis\.mting\.info\/yyting\/advertclient\/ClientAdvertList\.action
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/192\.133.+?\.mp4$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/static\.api\.m\.panda\.tv\/index\.php\?method=clientconf\.firstscreen&__version=(play_cnmb|(\d+\.){0,3}\d+)&__plat=ios&__channel=appstore
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.app\.vhall\.com\/v5\/000\/webinar\/launch
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.53site\.com\/Werewolf\/AD\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/werewolf\.53site\.com\/Werewolf\/.+?\/getAdvertise\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/werewolf\.53site\.com\/Werewolf\/.+?\/getShareVideodb\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/a\.applovin\.com\/.+?\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.wy\.guahao\.com\/json\/white\/dayquestion\/getpopad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/kano\.guahao\.cn\/.+?\?resize=\d{3}-\d{4}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.chelaile\.net\.cn\/adpub\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.chelaile\.net\.cn\/goocity\/advert\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/atrace\.chelaile\.net\.cn\/adpub\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/atrace\.chelaile\.net\.cn\/exhibit\?&adv_image
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pic1\.chelaile\.net\.cn\/adv\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/images\.91160\.com\/primary\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/d\.1qianbao\.com\/youqian\/ads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.huomao\.com\/channels\/loginAd
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.kkmh\.com\/v\d\/(ad|advertisement)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/i1\.hoopchina\.com\.cn\/blogfile\/.+?_\d{3}x\d{4}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/letv-gug\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pcvideoyd\.titan\.mgtv\.com\/pb\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/classbox2\.kechenggezi\.com\/api\/v1\/sponge\/pull\?request_time=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/e\.dangdang\.com\/media\/api.+?\?action=getDeviceStartPage
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.smzdm\.com\/v1\/util\/loading
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.smzdm\.com\/v2\/util\/banner
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.veryzhun\.com\/ad\/admob
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.fengshows\.com\/api\/launchAD
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.rr\.tv\/banner\/.+?\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ctrl\.zmzapi\.net\/app\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ctrl\.zmzapi\.net\/app\/init
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.laosiji\.com\/user\/startpage\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/adm\.10jqka\.com\.cn\/interface\/getads\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/smkmp\.96225\.com\/smkcenter\/ad\/.+?\/adBanner
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.ibuscloud.com\/v2\/app\/getStartPage
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.mddcloud\.com\.cn\/api\/ad\/getClassAd\.action
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.mddcloud\.com\.cn\/api\/advert\/getHomepage\.action
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.gotokeep\.com\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/static1\.keepcdn\.com\/.+?\d{3}x\d{4}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/aarkissltrial\.secure2\.footprint\.net\/v1\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/rm\.aarki\.net\/v1\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/182\.92\.244\.70\/d\/json\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/videos\/KnifeHit_4\/gear3\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/images\.kartor\.cn\/.+?\.html
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/appspace-client\/cr\/sys\/popAdv
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app3\.qdaily\.com\/app3\/boot_advertisements\.json
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fm\.fenqile\.com\/routev2\/other\/getfloatAd\.json
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fm\.fenqile\.com\/routev2\/other\/startImg\.json
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/vips-mobile\/router\.do\?api_key=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/consumer\.fcbox\.com\/v1\/ad\/OpeningAdInfo\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.feng\.com[\s\S]*?Claunch_screen
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/fengplus\.feng\.com\/index\.php\?r=api\/slide\/.+?Ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/img\/ad\.union\.api\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/v1\/iflyad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ggic\.cmvideo\.cn\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ggic2\.cmvideo\.cn\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ggv\.cmvideo\.cn\/v1\/iflyad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ivy\.pchouse\.com\.cn\/adpuba\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.oschina\.net\/action\/apiv2\/get_launcher
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/activity2\.api\.ofo\.com\/ofo\/Api\/v2\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ma\.ofo\.com\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/supportda\.ofo\.com\/adaction\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/ADLog
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/GetAD
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.58\.com\/api\/log\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.duokan\.com/pictures?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.duokan\.com/promotion_day
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\d?\.musical\.ly\/api\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mangaapi\.manhuaren\.com\/v1\/public\/getStartPageAds
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/b-api\.ins\.miaopai\.com\/1\/ad/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api5\.futunn\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/tqt\.weibo\.cn\/.+?advert\.index
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=tqt_sdkad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=tqtad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cdn\.tiku\.zhan\.com\/banner
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/capi\.mwee\.cn/app-api/V12/app/getstartad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/aes\.acfun\.cn\/s\?adzones
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.catch\.gift\/api\/v3\/pagead\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/imeclient\.openspeech\.cn\/adservice\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.yap\.yahoo\.com\/v\d{2}\/getAds\.do
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.myhug\.cn\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/api\/app\/member\/ver2\/user\/login\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/allOne\.php\?ad_name
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/open\.qyer\.com\/qyer\/startpage\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/open\.qyer.com\/qyer\/config\/get
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/media\.qyer\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.qiuduoduo\.cn\/guideimage
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/i\.ys7\.com\/api\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.gaoqingdianshi\.com\/api\/v2\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/i\d\.hoopchina\.com\.cn/blogfile\\/\/d+\\/\/d+\/BbsImg\.(?<=(big.(png|jpg)))$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/games\.mobileapi\.hupu\.com\/.+?\/(search|interfaceAdMonitor|status|hupuBbsPm)/(hotkey|init|hupuBbsPm)\.
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/games\.mobileapi\.hupu\.com\/interfaceAdMonitor
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m5\.amap\.com\/ws\/valueadded\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pic\.xiami\.net\/images\/common\/uploadpic[\s\S]*?\.jpg$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.zuoyebang\.cc\/zyb-image[\s\S]*?\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?allOne\.php\?ad_name=main_splash_ios
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?resource=article\/recommend\&accessToken=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cdn\.api\.fotoable\.com\/Advertise\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/counter\.ksosoft\.com\/ad\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/creatives\.ftimg\.net\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dd\.iask\.cn\/ddd\/adAudit
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/g\.tbcdn\.cn\/mtb\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/huichuan\.sm\.cn\/jsad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/iflow\.uczzd\.cn\/log\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/iphone265g\.com\/templates\/iphone\/bottomAd\.js
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m.+?\.china\.com\.cn\/statics\/sdmobile\/js\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/m.+?\.china\.com\.cn\/statics\/sdmobile\/js\/mobile\.advert\.js
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m.+?\.china\.com\.cn\/statics\/sdmobile\/js\/mobileshare\.js
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/overseas\.weico\.cc\/portal\.php\?a=get_coopen_ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/player\.hoge\.cn\/advertisement\.swf
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ress\.dxpmedia\.com\/appicast\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/s3\.pstatp\.com\/inapp\/TTAdblock\.css
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sdk\.99shiji\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/statc\.mytuner\.mobi\/media\/banners\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/static\.cnbetacdn\.com\/assets\/adv
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/static\.iask\.cn\/m-v20161228\/js\/common\/adAudit\.min\.js
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/v\.17173\.com\/api\/Allyes\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/wmedia-track\.uc\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/www\.ft\.com\/__origami\/service\/image\/v2\/images\/raw\/https%3A%2F%2Fcreatives\.ftimg\.net%2Fads*
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.lianbijr\.com\/adPage\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/a\.applovin\.com\/3\.0\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.58\.com\/api\/home\/advertising\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.58\.com\/api\/home\/appadv\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.58\.com\/api\/home\/invite\/popupAdv
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.58cdn\.com\.cn\/brandads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\d{1}\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/a\.apicloud\.com\/start_page\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cover.baidu.com\/cover\/page\/dspSwitchAds\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/client\/phpui2\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.(musical|snssdk)\.(com|ly)\/(api|motor)\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dsp\.toutiao\.com\/api\/xunfei\/ads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/.+?\.snssdk\.com\/motor\/operation\/activity\/display\/config\/V2\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/7n\.bczcdn\.com\/launchad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/channel\.beitaichufang\.com\/channel\/api\/v1\/promote\/ios\/start\/page
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/iapi\.bishijie\.com\/actopen\/advertising\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.api\.ke\.com\/config\/config\/bootpage
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/creditcard\.ecitic\.com\/citiccard\/wtk\/piwik\/piwik\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/appspace-getway\/getWay\/appspace-system-web\/cr\/v5\/appStartAdv
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/app\.10086\.cn\/biz-orange\/DN\/(findSale|homeSale)\/getsaleAdver
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/getWelcomeAd
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+?\?maxbr=850
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/asp\.cntv\.myalicdn\.com\/.+?\?maxbr=850
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.cntv\.cn\/nettv\/adp\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/v\.cctv\.com\/.+?850
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/(api|atrace)\.chelaile\.net\.cn\/adpub\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cap\.caocaokeji\.cn\/advert-bss\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/erebor\.douban\.com\/count\/\?ad=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\d{1}\.doubanio\.com\/view\/dale-online\/dale_ad/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mapi\.dangdang\.com\/index\.php\?action=init
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.daydaycook\.com\.cn\/daydaycook\/server\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cms\.daydaycook\.com\.cn\/api\/cms\/advertisement\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.dandanzan\.com\/res\/gdsefse\.js
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mobile-api2011\.elong\.com\/(adgateway|adv)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/(adgateway|adv)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/foodie-api\.yiruikecorp\.com\/v1\/(banner|notice)\/overview
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+?ad_
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+?log_
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.youtube\.com\/get_midroll_
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.youtube\.com\/ptracking
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/smkmp\.96225.com\/smkcenter\/ad/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/games\.mobileapi\.hupu\.com\/.+?\/status\/init
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/games\.mobileapi\.hupu\.com\/.+?\/interfaceAdMonitor\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/47\.97\.20\.12\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/(mixer|track2)\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show.do
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.jxedt\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/richmanapi\.jxedt\.com\/api\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/counter\.ksosoft.com\/ad\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ios\.wps\.cn\/ad-statistics-service
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.kingsoft-office-service\.com\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?.+?(c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/service\.iciba\.com\/popo\/open\/screens\/v3\?adjson
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.kkmh\.com\/.+?(ad|advertisement)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/resource\/m\/sys\/app\/adpos
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/resource\/m\/promo\/adsense
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.mgzf\.com\/renter-operation\/home\/startHomePage
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cdn\.moji\.com\/(adoss|adlink)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/p\d{1}\.meituan\.net\/(adunion|display|linglong|mmc|wmbanner)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/s3plus\.meituan\.net\/.+?\/linglong\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/capi.mwee.cn/app-api/V12/app/getstartad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/cdn-adn\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mapi\.mafengwo\.cn\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mapi\.mafengwo\.cn\/travelguide\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+?adpublish
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sp\.kaola\.com\/api\/openad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/nnapp\.cloudbae\.cn\/mc\/api\/advert/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dili\.bdatu\.com\/jiekou\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/wap\.ngchina\.cn\/news\/adverts\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ma\.ofo\.com\/ads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ma\.ofo\.com\/adImage\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cmsapi\.wifi8\.com\/v\d{1}\/(emptyAd|adNew)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pss\.txffp\.com\/piaogen\/images\/launchScreen/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/notch\.qdaily\.com\/api\/v2\/boot_ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/msspjh\.emarbox\.com\/getAdConfig
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.videozhishi\.com\/api\/getAdvertising
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sdkapp\.uve\.weibo\.com/\interface\/sdk\/actionad\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/tqt\.weibo\.cn\/api\/advert\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/s1\.api\.tv\.itc\.cn\/v4\/mobile\/control\/switch\.json
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.shihuo\.cn\/app3\/saveAppInfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ssl\.kohsocialapp\.qq\.com:10001\/game\/buttons
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/qt\.qq\.com\/lua\/mengyou\/get_splash_screen_info
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/app\/activity\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/btrace\.qq\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/vv\.video\.qq\.com\/getvmind\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/r\.inews\.qq\.com\/getQQNewsRemoteConfig
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.gaoqingdianshi\.com\/api\/v2\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/adpai\.thepaper\.cn\/.+?&ad=
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mrobot\.pconline\.com\.cn\/v3\/ad2p
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mrobot\.pconline\.com\.cn\/s\/onlineinfo\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mrobot\.pcauto\.com\.cn\/v3\/ad2p
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/preload\.xsp
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/static\.vuevideo\.net\/styleAssets\/.+?\/splash_ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/static\.vuevideo\.net\/styleAssets\/advertisement\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/overseas\.weico\.cc/portal\.php\?a=get_coopen_ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api-release\.wuta-cam\.com\/ad_tree
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/res-release\.wuta-cam\.com\/json\/ads_component_cache\.json
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/snailsleep\.net\/snail\/v1\/screen\/qn\/get\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/snailsleep\.net\/snail\/v1\/adTask\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/nochange\.ggsafe\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/thor\.weidian\.com\/ares\/home\.splash\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.xiachufang\.com\/v2\/ad/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.psy-1\.com\/cosleep\/startup
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ctrl\.(playcvn|zmzapi)\.(com|net)\/app\/(ads|init)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.mixcapp\.com\/mixc\/api\/v2\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/(api|b)\.zhuishushenqi\.com\/advert
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.21jingji\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.(musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/channel\.beitaichufang\.com\/channel\/api\/v\d\/promote\/ios\/start\/page
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/status\.boohee\.com\/api\/v\d\/app_square\/start_up_with_ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/.+?\/appStartAdv
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d\.(png|jpg)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pic\d\.chelaile\.net\.cn\/adv\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.intsig\.net\/user\/cs\/operating\/app\/get_startpic\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.caijingmobile\.com\/(ad|advert)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/v2\/app_ads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\d\.doubanio\.com\/view\/dale-online\/dale_ad/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/e\.dangdang\.com\/.+?getDeviceStartPage
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dxy\.com\/app\/i\/ask\/biz\/feed\/launch
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/foodie-api\.yiruikecorp\.com\/v\d\/(banner|notice)\/overview
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.variflight\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.variflight\.com\/v\d\/advert\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/games\.mobileapi\.hupu\.com\/.+?\/(interfaceAdMonitor|interfaceAd)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/consumer\.fcbox\.com\/v\d\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.haohaozhu\.cn\/index\.php\/home\/AppInit\/getStartPhoto
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ih2\.ireader\.com\/zyapi\/bookstore\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ih2\.ireader\.com\/zyapi\/self\/screen\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ih2\.ireader\.com\/zycl\/api\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/MobileAdServer\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})(\.(2(5[0-5]{1}|[0-4]\d{1})|[0-1]?\d{1,2})){3}\/EcomResourceServer/AdPlayPage/adinfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.laifeng\.com\/v\d\/start\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ios\.lantouzi\.com\/api\/startpage
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mangaapi\.manhuaren\.com\/v\d\/public\/getStartPageAds
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.meituan\.net\/(display|midas)\/.+?\.(gif|jpg)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/p\d\.meituan\.net\/wmbanner\/[A-Za-z0-9]+\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/p\d\.meituan\.net\/movie\/[A-Za-z0-9]+\.jpg\?may_covertWebp
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/capi.mwee.cn/app-api/V\d{2}/app/getstartad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/v\d\/iflyad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ggic\d?\.cmvideo\.cn\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/b-api\.ins\.miaopai\.com\/\d\/ad/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/easyreadfs\.nosdn\.127\.net\/ad-material\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/slapi.oray.net/client/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cmsapi\.wifi8\.com\/v\d\/(emptyAd|adNew)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.rr\.tv\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.smzdm\.com\/v\d\/util\/loading
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/service\.4gtv\.tv\/4gtv\/Data\/(GetAD|ADLog)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/image\.suning\.cn\/uimg\/ma\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img01\.10101111cdn\.com\/adpos\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/3gimg\.qq\.com\/tencentMapTouch\/splash\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mrobot\.pconline\.com\.cn\/v\d\/ad2p
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mrobot\.pcauto\.com\.cn\/v\d\/ad2p
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/snailsleep\.net\/snail\/v\d\/screen\/qn\/get\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/snailsleep\.net\/snail\/v\d\/adTask\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.wallstreetcn\.com\/apiv\d\/advertising\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/configs\/(splash_ad|ad_urls)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/portal-xunyou\.qingcdn\.com\/api\/v\d\/ios\/ads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/api\/v\d\/adRealTime
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/tiku\.zhan\.com\/Common\/newAd\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.mixcapp\.com\/mixc\/api\/v\d\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.yinxiang\.com\/ads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.zybang\.com\/adx\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.izuiyou\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/123\.59\.31\.1\/(adgateway|adv)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/119\.18\.193\.135\/(adgateway|adv)\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.atm\.youku\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\w\.g\.pptv\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/h\w{2}\.hxsame\.hexun\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[^(apple|10010)]+\.(com|cn)\/(a|A)d(s|v)?(/|\.js)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[^bbs].tianya\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w.?up\.qingdaonews\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w{6}\.com1\.z0\.glb\.clouddn\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w{8}\.logic\.cpm\.cm\.kankan\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w+\.beacon\.qq\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w+\.cloudfront\.net\/banner
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w+\.gdt\.qq\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w+\.kingsoft-office-service\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w+\.l\.qq\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/9377\w{2}\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/a0b\w{2}\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/(a?d|sax)\d.sina.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\d\.tuisong\.baidu\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/d\d.sinaimg.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dl\.app.gtja\.com\/.+?\d+\.jpg$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/impservice.+?youdao.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/log.+?baidu\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/notice\.send-anywhere\.com\/banner
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sa\d.tuisong.baidu.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sax\w?\.sina\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sax\w?\.sina\.com\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/server-\w+.imrworldwide.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/t\d{2}\.baidu\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/paopao\w?.qiyipic.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.bldimg\.com/(background|splash)/.+?\.png$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player\/ad_
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?ccode=0902
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ulogs\.umeng\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ulogs\.umengcloud\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/alogs\.umeng\.co
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/alogs\.umeng\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/(\w\.)?up\.qingdaonews\.(com|cn|net)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.beacon\.qq\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.gdt\.qq\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.kingsoft-office-service\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\.l\.qq\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[^(apple|10010)]+\.(com|cn)\/(a|A)d(s|v)?(\/|\.js)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[^bbs]\.tianya\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w{6}\.com1\.z0\.glb\.clouddn\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w{8}\.logic\.cpm\.cm\.kankan\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/\w+\.cloudfront\.net\/banner
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/9377\w{2}\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/a0b\w{2}\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ad\d\.sina\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ad\d\.sina\.com.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\d\.tuisong\.baidu\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/d\d\.sina\.com\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/d\d\.sinaimg\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dl\.app\.gtja\.com/.+?\d+\.jpg$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/log\..+?\.baidu\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/notice\.send-anywhere\.com\/banner
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sa\d\.tuisong\.baidu\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sax\d\.sina\.com\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sax\w?\.sina\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sax\w?\.sina\.com\.cn
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/server-\w+\.imrworldwide\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/t\d{2}\.baidu\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.bldimg\.com\/(background|splash)\/.+?\.png$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ups\.youku\.com\/.*?needad=1&
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^http?:\/\/www\.tsytv\.com\.cn\/api\/app\/ios\/ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/qidian\.qpic\.cn\/qidian_common
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/123\.59\.30\.10\/adv\/advInfos
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https:\/\/static\.api\.m\.panda\.tv\/index\.php\?method=clientconf\.firstscreen&__version=(play_cnmb|(\d+\.){0,3}\d+)&__plat=ios&__channel=appstore
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/i\d\.hoopchina\.com\.cn/blogfile\/\d+\/\d+\/BbsImg\.(?<=(big.(png|jpg)))$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api-163\.biliapi\.net\/cover
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/api-mifit\.huami\.com\/(discovery\/mi\/discovery\/(homepage|sleep|sport(_(summary|training))?|step_detail|training_video)_ad|v1\/app\/startpages\.json)\?
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/122\.14\.246\.33\/MobileAdServer\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pan-api\.bitqiu\.com\/activity\/(getPromoteGuide|getUrlList)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^http:\/\/dssp\.stnts\.com
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/.{25}\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.feng\.com\/v\d\/advertisement\/.*?Claunch
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.bodivis\.com\.cn\/app\/splashAdvertise
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?/V\d\/splash\/getSplashV\d\.action
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/restapi\.iyunmai\.com\/api\/ios\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d+\.(jpg|png)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.creditcard\.ecitic\.com\/.*?\/appStartAdv
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/queryGuidePageAds\.do
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[\s\S]*\/.+?\.tc\.qq\.com/.*?p201.1\.mp4
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[\s\S]*\/website\/.*?\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[\s\S]*\/music\/photo_new\/T017R
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/y\.gtimg\.cn\/music\/.*?_Ad/\d+\.png
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/shp\.qpic\.cn\/pggamehead\/.*?h=\d{4}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api2\.helper\.qq\.com\/game\/buttons
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[\s\S]*\.baidu\.com/.*?ad[xs]\.php
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pan\.baidu\.com\/rest\/2.0\/pcs\/adx
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[\s\S]*\/youku\/.*?\.mp4
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/p\d.meituan.net\/movie\/.*?\?may_covertWebp
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/p\d\.meituan\.net\/wmbanner\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.meituan\.net\/midas\/.*?@\d{4}h
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.meituan\.net\/display\/\w+\.jpg\.webp
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[\s\S]*\/eapi\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/iad.*?mat\.music\.12[67]\.net/\w+\.(jpg|mp4)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[\s\S]*\/ting\/[a-z]*\/ts-\d+
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/rich\.kuwo\.cn\/AdService\/kaiping\/adinfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/[\s\S]*\.snssdk\.com\/api\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.feng\.com\/v1\/advertisement\/.*?Claunch
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/business\.msstatic\.com\/advertiser\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/(aladdin\/na\/m\/getLoadingPicture|aladdin\/na\/m\/getLoadingPicture)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/pic\.edaijia\.cn\/adsplash\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/prom\.mobile\.gome\.com\.cn\/mobile\/promotion\/promscms\/sale\w+\.jsp
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app\.yinxiang\.com\/ads\/getAdsInfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.douban\.com\/v2\/app_ads\/splash
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ptmpcap\.caocaokeji\.cn\/advert-bss\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/newapp\.szsmk\.com\/app\/config\/.*?Ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.rr\.tv\/.*?(getAll|Version)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/client\.qunar\.com\/pitcher-proxy\?qrt=p_splashAd
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/m\.tuniu\.com\/api\/operation\/splash\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad/.*?\d{4}\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dimg04\.c-ctrip\.com\/images\/\w+(_\d{4}){2}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/adm\.10jqka\.com\.cn\/img\/ad\/.*?(1\d{2}|\d{4})\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.gotokeep\.com\/ads\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ggx\.cmvideo\.cn\/request\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/oral\.youdao\.com\/oral\/adInfo
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/impservice\.dictapp\.youdao\.com\/imp\/request
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/du\.hupucdn\.com\/\w+h\d{4}
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.yangkeduo\.com\/api\/cappuccino\/splash
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/.+?\.jpg$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/yxyapi\d\.drcuiyutao\.com\/yxy-api-gateway\/api\/json\/advert\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.zhihu\.com\/terms\/privacy\/confirm
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.zhihu\.com\/market\/popover
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.zhihu\.com\/search\/(top|tab|preset)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/api\.zhihu\.com\/(launch|ad-style-service|app_config|real_time|ab\/api)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch|real_time)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/(api|www)\.zhihu\.com\/.*?(featured-comment-ad|recommendations|community-ad)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/(api|www)\.zhihu\.com\/(fringe|adx|commercial|ad-style-service|banners|mqtt)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/interface3?\.music\.163\.com/eapi/(ad|abtest|sp|hot|store|search/(specialkeyword|defaultkeyword|hot))
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/capis-slb\.didapinche\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/weibointl\.api\.weibo\.cn\/portal.php\?a=get_coopen_ads
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/yxyapi2\.drcuiyutao\.com\/yxy-api-gateway\/api\/json\/advert\/getsAd
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/capis-clb\.didapinche\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.vistopia\.com\.cn\/api\/(v1|v\/d)\/home\/advertisement
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/g\.cdn\.pengpengla\.com\/starfantuan\/boot-screen-info\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.qbb6\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.didapinche\.com\/app\/adstat\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/capis\.didapinche\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mcupdate\.gstarcad\.com\/api\/v2\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/mi\.gdt\.qq\.com\/gdt_mview.\fcg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/api\.jxedt\.com\/jump\/EMiCcDNp
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/richmanapi\.jxedt\.com\/api\/banadplus
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/richmanapi\.jxedt\.com\/api\/ad\/guideplus
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/richmanmain\.jxedt\.com\/advertisement\/fallback
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/richmanapi\.jxedt\.com\/api\/adplus
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.nfmovies\.com\/pic\/tu\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.nfmovies\.com\/uploads\/images\/play\.jpg
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www\.nfmovies\.com\/templets\/default\/images\/logos
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ddrk\.me\/image\/logo_footer\.png$
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.ddrk\.me\/ad190824
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/ddrk\.me\/image\/logo_footer\.png
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/ddrk\.me\/wp-content\/plugins\/advanced-floating-content-lite\/public\/images\/close\.png
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/img\.ddrk\.me\/cover\.png
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/app-api\.smzdm\.com\/util\/loading
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/.+?\/img\/web\.business\.image\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/emdcadvertise\.eastmoney\.com\/infoService
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/www.icourse163.org\/.*?(Advertisement)
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/sf.*?-ttcdn-tos\.pstatp\.com\/obj\/ad
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: ^https?:\/\/oset-api\.open-adx\.com\/ad\/
-    location: http://reject
+    location: http://reject/
     status_code: 307
   - match: >-
       ^https?:\/\/(101\.201\.175\.228|182\.92\.251\.113)\/brand\/search\/v1\.json
-    location: http://reject
+    location: http://reject/
     status_code: 307
 mitm:
   hostnames:
