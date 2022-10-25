@@ -2,7 +2,7 @@
 # 作者GitHub：https://github.com/Coldvvater
 # 配置库GitHub：https://github.com/Coldvvater/Egern
 # 配置使用方法参阅：https://raw.githubusercontent.com/Coldvvater/Egern/master/Profile/README.md
-# 更新时间：2022.09.24
+# 更新时间：2022.10.25
 ---
 policy_groups:
   - select:
@@ -202,15 +202,6 @@ rules:
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/Telegram.yaml"
       policy: Telegram
-  - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/Twitter.yaml"
-      policy: Foreign
-  - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/Google.yaml"
-      policy: Foreign
-  - rule_set:
-      match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/blackmatrix7/GitHub.yaml"
-      policy: Foreign
   - rule_set:
       match: "https://raw.githubusercontent.com/Coldvvater/Egern/master/Rule/ACL4SSR/ProxyLite.yaml"
       policy: Foreign
