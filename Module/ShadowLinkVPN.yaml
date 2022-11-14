@@ -2,11 +2,18 @@
 #!desc=ShadowLinkVPN解锁会员节点
 mitm:
   hostnames:
-    - %APPEND% buy.itunes.apple.com
+    - buy.itunes.apple.com
     
 scriptings:
   - http_response:
-      name: shadowlink-json
+      name: shadowlink
+      script_url: >-
+        https://raw.githubusercontent.com/Marol62926/MarScrpt/main/shadowlink.js
+      match: >-
+        ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
+      body_required: true
+  - http_response:
+      name: shadowlink
       script_url: >-
         https://raw.githubusercontent.com/Marol62926/MarScrpt/main/shadowlink.js
       match: >-
