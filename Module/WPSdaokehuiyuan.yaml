@@ -2,7 +2,7 @@
 #!desc=稻壳会员解锁
 mitm:
   hostnames:
-    - %APPEND% docer.wps.cn,vipapi.wps.cn,account.wps.cn
+    - *.docer.wps.cn,vipapi.wps.cn,account.wps.cn
     
 scriptings:
   - http_response:
