@@ -1,0 +1,16 @@
+#!name=Notability Plus
+#!desc=Notability解锁
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/notability.png
+#!homepage=https://github.com/deezertidal
+#!author=litieyin
+
+mitm:
+  hostnames:
+    - notability.com
+scriptings:
+  - http_response:
+      name: Notability
+      script_url: >-
+        https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/notability.js
+      match: ^https://notability.com/subscriptions
+      body_required: true
