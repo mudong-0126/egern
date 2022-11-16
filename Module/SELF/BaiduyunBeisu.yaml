@@ -1,0 +1,14 @@
+#!name=百度云加速
+#!desc=百度云倍速播放
+#!author=NobyDa
+#!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/baiducloud.png
+mitm:
+  hostnames:
+    - pan.baidu.com
+scriptings:
+  - http_response:
+      name: 百度云加速
+      script_url: >-
+        https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+      match: https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user
+      body_required: true
