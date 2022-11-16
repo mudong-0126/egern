@@ -1,0 +1,11 @@
+#!name=迅雷会员
+#!desc=迅雷会员
+scriptings:
+  - http_response:
+      name: 迅雷会员
+      script_url: https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js
+      match: https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo
+      body_required: true
+mitm:
+  hostnames:
+    - xluser-ssl.xunlei.com
