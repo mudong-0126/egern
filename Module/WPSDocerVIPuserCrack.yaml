@@ -1,38 +1,20 @@
 #!name=WPS稻壳会员
 #!desc=稻壳会员
 mitm:
-
   hostnames:
-
     - '*.docer.wps.cn'
-
     - vipapi.wps.cn
-
     - account.wps.cn
-
 scriptings:
-
   - http_response:
-
       name: 稻壳会员1
-
       script_url: >-
-
         https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js
-
       match: ^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips
-
       body_required: true
-
   - http_request:
-
       name: 稻壳会员2
-
       script_url: >-
-
         https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js
-
       match: >-
-
         ^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail)
-
